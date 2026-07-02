@@ -11,7 +11,7 @@ services:
     env_file: .env
     volumes:
       - pg_data_production:/var/lib/postgresql/data
-    restart: unless-stoppedcd
+    restart: unless-stopped
   backend:
     image: konstantinru17/taski_backend # Качаем с Docker Hub
     env_file: .env
